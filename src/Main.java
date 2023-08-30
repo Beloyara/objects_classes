@@ -13,15 +13,18 @@ public class Main {
 
         System.out.println();
 
-        Author warAndPeace = new Author ("Л.Н.Толстой");
-        System.out.println("Автор - " + warAndPeace.getAuthorName());
+        Author warAndPeace = new Author ("Л.Н.","Толстой");
+        System.out.println("Автор - " + warAndPeace.getName());
+        System.out.println("Автор - " + warAndPeace.getSurname());
         Book warAndPeace1 = new Book ("Война и Мир", 1867);
+        warAndPeace1.setPublishingYear(1870);
         System.out.println("Название - " + warAndPeace1.getBookName());
         System.out.println("Год - " + warAndPeace1.getPublishingYear());
 
-        Author starikIMore = new Author("Э.Хемингуэй");
+        Author starikIMore = new Author("Э.", "Хемингуэй");
         Book starikIMore1 = new Book("Старик и море", 1952);
-        System.out.println("Автор - " + starikIMore.getAuthorName());
+        System.out.println("Автор - " + starikIMore.getName());
+        System.out.println("Автор - " + starikIMore.getSurname());
         System.out.println("Название - " + starikIMore1.getBookName());
         System.out.println("Год - " + starikIMore1.getPublishingYear());
     }

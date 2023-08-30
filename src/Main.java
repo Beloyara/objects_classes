@@ -16,10 +16,13 @@ public class Main {
         System.out.println();
 
         Person sarah = new Person("Sarah", 30);
-        System.out.println("sarah.name = " + sarah.name);
-        System.out.println("sarah.age = " + sarah.age);
+        System.out.println("sarah.name = " + sarah.getName());
+        System.out.println("sarah.age = " + sarah.getAge());
+        sarah.setAge(31);
+        System.out.println("sarah.getAge() = " + sarah.getAge());
+
         Person john = new Person("John", 13);
-        System.out.println("john.name = " + john.name);
-        System.out.println("john.age = " + john.age);
+        System.out.println("john.name = " + john.getName());
+        System.out.println("john.age = " + john.getAge());
     }
 }
